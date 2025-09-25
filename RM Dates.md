@@ -17,11 +17,13 @@ There are several ways to display the saved date depending on the format selecte
 
 Most commonly a date is a single date, Jan 1 1970, herein called a "One Part Date".
 A date can also indicate a range or interval, e.g.
-```
+
+``` text
 From Jan 1 1970 to Feb 4 1975
 or
 Between 8 May 1973 and 8 Jun 1975 
 ```
+
 herein named a "Two Part Date" since the RM Date has to encode both the start and end dates.\
 A second use of the term Double Dates regards the formatting of a date that occurred in the
 transition between Julian and Gregorian calendars in the West. This doc calls them "Double JG Dates", they are also called "slash dates".. 
@@ -44,11 +46,9 @@ An example transition (two consecutive days)-
 | :-------------------------- | :--------------- | :------------------- |
 | Germany, Catholic (Bavaria) | Oct 5, 1583      | Oct 16, 1583         |
 
-
 In historical sources created when dates were in transition, Julian data was sometimes/often  followed with O.S. and Gregorian dates followed by N.S.( old and new style)
 
-
-```
+``` text
                                  GREGORIAN
   2   2   2   2   2   2   2   2   2   2   2   2   3   3   3   3   3   3   3   3   3   3   3   3
   1   2   3   4   5   6   7   8   9  10  11  12   1   2   3   4   5   6   7   8   9  10  11  12 
@@ -77,11 +77,10 @@ Q1 2014 => sort date Jan 2014 same sort date as entering Jan 2014 in date
 questions
 Do quaker dates just have a different canonical input/output but stored date is simple Gregorian?
 
-
-## Date validation:
+## Date validation
 
 General
-must be a valid Gregorian date (# days in month, leap year rules etc?) (do double dates jave to be valid Julian dates (leap years were different)\
+must be a valid Gregorian date (# days in month, leap year rules etc?) (do double dates have to be valid Julian dates (leap years were different)\
 Ambiguous date parts are interpreted by the sequence as specified in preferences.\
 For a Two-Part Date, the first date must be earlier than second.\
 
@@ -89,19 +88,17 @@ Double JG Dates
 Month-day must be between Jan 1 and Mar 24 inclusive. 
 Year must be 1583 or greater
 
-
 Canonical date format
-Double JG Dates- the Gregorian date after the slash may only contain a year. 
+Double JG Dates- the Gregorian date after the slash may only contain a year.
 And only the minimum number of digits required is included that show the main year +1.
 so: 1 Feb 1755/6     1 Feb 1759/60     1 Feb 1798/9    1 Feb 1799/1800
 There is no accounting for the 10 days "eliminated"
-
 
 ## Database RM Date format
 
 Most RM database format dates are 24 bytes long, except '.' type dates which are one character and 'T' dates which can be any length.
 
-```
+``` text
 schematic of an RM Date
 origin 0 based indexing
 
@@ -190,7 +187,6 @@ D, Q, and R dates may be One Part or Two Part Dates.
 |           |      02      | Q2                                         |
 |           |      03      | Q3                                         |
 |           |      04      | Q4                                         |
-
 
 |           | Position 10-11 | meaning                                       |
 | --------- | -------------- | --------------------------------------------- |
@@ -315,4 +311,5 @@ D.+19240324/.+00000000/.
 with a sort date of-
 6713296958983766028
 
-the Julian date is stored in the DB !!!
+the Julian calendar date is stored in the DB !!!
+

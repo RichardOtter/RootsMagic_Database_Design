@@ -30,9 +30,22 @@ CREATE TABLE GroupTable (RecID INTEGER PRIMARY KEY, GroupID INTEGER, StartID INT
 | 4   | EndID      | _FK ==> PersonTable.PersonID |
 | 5   | UTCModDate | _STD                         |
 
-## Open Questions
+## Notes
 
 If the groups are only witten by code, then one can always use StartID == EndID
 The table will be bigger, but who cares.
 
-### DONE 1
+Example code to read a group.\
+from Jerry Bryan
+
+Note the join that takes into account of the possible
+range of IDs in each group table row.
+
+```SQL
+
+SELECT P.PersonID
+FROM PersonTable AS P
+JOIN GroupTable AS G ON G.StartID <= P.PersonID AND P.PersonID <= G.EndID
+JOIN TagTable AS T ON T.TagType = 0 AND T.TagValue = G.GroupID
+AND T.TagName LIKE 'descendants of g grandparents'
+```

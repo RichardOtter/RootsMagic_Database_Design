@@ -37,29 +37,43 @@ CREATE INDEX idxDnaId2 ON DNATable (ID2);
 | 16  | Verified      | INTEGER |
 | 17  | Note          | TEXT    |
 | 18  | UTCModDate    | FLOAT   |
-|
+|     |               |         |
 
 ## Notes
 
-| #   | Name          | Note                         |
-| --- | ------------- | ---------------------------- |
-| 1   | CitationID    |                              |
-| 1   | RecID         |                              |
-| 2   | ID1           |                              |
-| 3   | ID2           |                              |
-| 4   | Label1        |                              |
-| 5   | Label2        |                              |
-| 6   | DNAProvider   |                              |
-| 7   | SharedCM      |                              |
-| 8   | SharedPercent |                              |
-| 9   | LargeSeg      |                              |
-| 10  | SharedSegs    |                              |
-| 11  | Date          |                              |
-| 12  | Relate1       |                              |
-| 13  | Relate2       |                              |
-| 14  | CommonAnc     |                              |
-| 15  | CommonAncType |                              |
-| 16  | Verified      |                              |
-| 17  | Note          |                              |
-| 18  | UTCModDate    |                              |
+| #   | Name          | Note |
+| --- | ------------- | ---- |
+| 1   | CitationID    |      |
+| 1   | RecID         |      |
+| 2   | ID1           |      |
+| 3   | ID2           |      |
+| 4   | Label1        |      |
+| 5   | Label2        |      |
+| 6   | DNAProvider   |      |
+| 7   | SharedCM      |      |
+| 8   | SharedPercent |      |
+| 9   | LargeSeg      |      |
+| 10  | SharedSegs    |      |
+| 11  | Date          |      |
+| 12  | Relate1       |      |
+| 13  | Relate2       |      |
+| 14  | CommonAnc     |      |
+| 15  | CommonAncType |      |
+| 16  | Verified      |      |
+| 17  | Note          |      |
+| 18  | UTCModDate    |      |
+
+
+The missing Lookup Table
+
+| DNAProvider    |     |
+| -------------- | --- |
+| 23andme        | 1   |
+| Ancestry       | 2   |
+| FamilyTree DNA | 3   |
+| Living DNA     | 4   |
+| MyHeritage     | 5   |
+| GEDmatch       | 6   |
+| Unknown        | 998 |
+| Other          | 999 |
 

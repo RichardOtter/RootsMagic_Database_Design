@@ -50,8 +50,8 @@ CREATE INDEX idxReversePlaceName ON PlaceTable (Reverse);
 | 9   | MasterID     | _FK ==> PlaceTable.PlaceID  _SPECIAL-CASE    |
 | 10  | Note         | _STD                                         |
 | 11  | Reverse      | _TEXT-SL  _RMNC                              |
-| 12  | fsID         | _NOT-IMP  (all null) FamilySearch place ID ? |
-| 13  | anID         | _NOT-IMP  (all null) Ancestry place ID ?     |
+| 12  | fsID         | _NOT-IMP  (all 0) FamilySearch place ID ?    |
+| 13  | anID         | _NOT-IMP  (all 0) Ancestry place ID ?        |
 | 14  | UTCModDate   | _STD                                         |
 
 _SPECIAL-CASE
