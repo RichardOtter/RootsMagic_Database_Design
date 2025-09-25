@@ -94,13 +94,8 @@ W and S are negative
 ### UTCModDate	FLOAT
 
 Modified Julian date  
-Modified means there is an offset subtracted from the standard Julian Date number.
-Usually, this offset is: 2400000.5 but RM uses Microsoft's offset: 2415018.5
-see:
-[UTCModDate.txt](https://github.com/ricko2001/RootsMagic_Database_Design/blob/main/UTCModDate.txt)\
-<https://en.wikipedia.org/wiki/Julian_day>\
-<https://answers.microsoft.com/en-us/msoffice/forum/all/julian-date/7d23f252-272a-4e52-802e-ec3f3e616845>
 
+See file "UTCModDate" for more info.
 
 ### XML  BLOB
 

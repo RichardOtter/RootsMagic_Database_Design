@@ -61,6 +61,8 @@ Uses backslash `"\"` as directory separator on Win and MacOS
 
 MediaFile   Case insensitive
 
+Note that the paths end with a backslash only if they refer to root folder
+Other paths do not end in backslash
 
 ## Lookup Tables
 
@@ -75,7 +77,9 @@ MeidaType
 
 ## Open Questions
 
-Thumbnail  format ?, size ?
+Thumbnail
+format ?, size ?
+probably jpeg
 
 
 

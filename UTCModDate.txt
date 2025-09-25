@@ -1,4 +1,22 @@
-https://answers.microsoft.com/en-us/msoffice/forum/all/julian-date/7d23f252-272a-4e52-802e-ec3f3e616845
+## Modification Timestamp : UTCModeDate
+
+included as a column in most (all ?) tables
+
+uses SQlite function julianday with argument 'now' to generate a timestamp in the  UTC JulianDay format. This is not what RM uses, however.
+RM subtracts an offset:
+
+julianday('now') - 2415018.5
+
+This generates a "modified Julian Date'
+
+Modified Julian Date means there is an offset subtracted from the standard Julian Date number.
+Usually, this offset is: 2400000.5 but RM uses Microsoft's offset: 2415018.5
+see:
+[UTCModDate.txt](https://github.com/ricko2001/RootsMagic_Database_Design/blob/main/UTCModDate.txt)\
+<https://en.wikipedia.org/wiki/Julian_day>\
+<https://answers.microsoft.com/en-us/msoffice/forum/all/julian-date/7d23f252-272a-4e52-802e-ec3f3e616845>
+<https://answers.microsoft.com/en-us/msoffice/forum/all/julian-date/7d23f252-272a-4e52-802e-ec3f3e616845>
+
 
 Microsoft uses days since Dec20 1899.
 
@@ -22,16 +40,27 @@ using SQLite-
 -- to generate current UTCModDate
 SELECT julianday('now') - 2415018.5 AS UTCModDate
 
--- to convert UTCModDate to standard format date/time
+-- to convert UTCModDate to standard format UTC date/time
 SELECT UTCModDate,
 DATE(UTCModDate + 2415018.5) AS Date,
 TIME(UTCModDate + 2415018.5) AS Time,
 DATETIME(UTCModDate + 2415018.5) AS DateTime
 FROM EventTable
 
-To save UTCModDate to current time in RM database
-UPDATE EventTable
-  SET UTCModDate = julianday('now') - 2415018.5
+
+
+-- Update the UTCModDate to the current time stamp:
+UPDATE SourceTable
+SET UTCModDate = julianday('now') - 2415018.5;
+
+-- Select and convert UTCModDate to standard format UTC
+SELECT datetime(UTCModDate + 2415018.5)
+FROM SourceTable ;
+
+-- or to local time:
+SELECT datetime(UTCModDate + 2415018.5, 'localtime')
+FROM SourceTable ;
   
 ```
+
 

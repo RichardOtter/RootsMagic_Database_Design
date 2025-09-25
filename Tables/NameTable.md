@@ -93,12 +93,15 @@ Here are several examples-
 | Öhring         | Ohring         |
 | Rüb            | Rub            |
 
-The Japanese names in my database aren't changed, so ASCIIized is not at 
-all a correct description of the transformation. It could also involve using the normalized version of names containing Unicode combining characters.
+The Japanese names in my database are mot changed, so ASCIIized is not at
+all a correct description of the transformation. It could also involve using the
+normalized version of names containing Unicode combining characters.
 
-The columns were not populated at upgrade time, but are filled when a name is now added or edited.
+The columns were not populated at upgrade time, but are filled when a name is
+now added or edited.
 
-The new columns are not declared with a collation, so the indexes that exist were created using the default binary collation.
+The new columns are not declared with a collation, so the indexes that exist
+were created using the default binary collation.
 
 ## Lookup Tables
 
