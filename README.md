@@ -1,5 +1,5 @@
 # RootsMagic_Database_Design
-This branch of the repo describes the ver 10 database schema
+This branch of the repo describes the ver 11 database schema
 See other branches for other schema versions.
 
 ## Overview
@@ -21,17 +21,20 @@ familiar with the web site <https://SQLiteToolsForRootsMagic.com>
 
 There is a user forum where interesting questions are posed and answered.
 
-The forum format allows a easy exchange of ideas and posting of SQL statements, but it
-does not lend itself towards creating documentation and keeping it current and fixing errors.
-That's why I am starting this project where anyone can contribute, fix errors, and fill in the gaps.
-Everything is under version control, so we can keep current docs for all future RM releases
-in separate branches or perhaps create point-in-time "releases" that may be more easily accessed.
+The forum format allows a easy exchange of ideas and posting of SQL statements,
+but it does not lend itself towards creating documentation and keeping it current
+and fixing errors. That's why I am starting this project where anyone can
+contribute, fix errors, and fill in the gaps. Everything is under version
+control, so we can keep current docs for all future RM releases in separate
+branches or perhaps create point-in-time "releases" that may be more easily
+accessed.
 
 ## Content
 
-Currently, most content is in the Tables folder, which contains one file for 
-each RM database table plus one file, "+ General.md", containing information used by the 
-table files.
+Currently, most content is in the Tables folder, which contains one file for
+each RM database table plus one file, "+ General.md", containing information
+used by the other table files.
+
 Each table file has:
 * Table name at the top.
 * Purpose section. A one liner giving summary of what this table does.
@@ -44,10 +47,10 @@ free form notes another list.
 * A DONE marker with a level number. starting at 1 and increasing, 
 here to help order what needs to be fixed next.
 
-Some more general topics are included in this root folder, alongside this ReadMe file..
+Some more general topics are discussed in files included in this root folder,
+alongside this ReadMe file.
 
 Also- a disclaimer- I have not investigated the RootsMagic "LDS Options".
-
 
 ## File format
 

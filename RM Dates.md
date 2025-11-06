@@ -28,9 +28,9 @@ herein named a "Two Part Date" since the RM Date has to encode both the start an
 A second use of the term Double Dates regards the formatting of a date that occurred in the
 transition between Julian and Gregorian calendars in the West. This doc calls them "Double JG Dates", they are also called "slash dates".. 
 
-Double JG Dates usually look like this 04 Feb 1740/1 or 14 February 1699/1700  The year is julian/Gregorian and enough digits are used for the Gregorian portion to make it unambiguous. Dates may only to be written as double if they occur between 1 January and 25 March in the years from 1582 until the year of full conversion. (1753 in the old British Empire). RM allows modern dates to be in double JG date format\
+Double JG Dates usually look like this 04 Feb 1740/1 or 14 February 1699/1700  The year is Julian/Gregorian and enough digits are used for the Gregorian portion to make it unambiguous. Dates may only to be written as double if they occur between 1 January and 25 March in the years from 1582 until the year of full conversion. (1753 in the old British Empire). RM allows modern dates to be in double JG date format\
 
-Double Date  Julian Gregorian  Old Style - New Style 
+Double Date  Julian Gregorian  Old Style - New Style
 
 <https://www.familysearch.org/en/wiki/Julian_and_Gregorian_Calendars>
 
@@ -96,7 +96,7 @@ There is no accounting for the 10 days "eliminated"
 
 ## Database RM Date format
 
-Most RM database format dates are 24 bytes long, except '.' type dates which are one character and 'T' dates which can be any length.
+Most RM database format dates are 24 bytes long, except '.' type dates which are one character and 'T' dates which can be any length >=1.
 
 ``` text
 schematic of an RM Date
@@ -104,29 +104,53 @@ origin 0 based indexing
 
 0123456789A123456789B123
 TS+YYYYMMDDJC+YYYYMMDDJC
+
+
+examples
+D.+19620100..+00000000..
+D.+19550925..+00000000..
+D.+19890800..+00000000..
+D.+19690000.A+00000000..
+DS+19870925..+20190100..
+D.+19590204..+00000000..
+.
+DS+19360000..+19440000..
+D.+19270422..+00000000..
+DR+19530000..+19550000..
+DS+19440000..+19470000..
+D.+19290716..+00000000..
+DS+19491108..+19500330..
+Tunknown
+D.+18840203..+00000000..
+D.+19450525..+00000000..
+DS+19130614..+19130627..
+D.+19250101..+00000000..
+DR+19250000..+19300000..
+D.+19510810..+00000000..
+D.+19061103..+00000000..
 ```
 
-Python style string slicing
+(range is shown using Python style string slicing)
 
-|        | char  | range  | mea              |
-| ------ | :---- | :----- | :--------------- |
-| Part 0 | ===== | ====== | ======           |
-|        | T     | 0:1    | Type             |
-|        | S     | 1:2    | Structure        |
-| Part 1 | ===== | ====== | =======          |
-|        | +     | 2:3    | BC/AD -/+        |
-|        | YYY   | 3:7    |                  |
-|        | MM    | 7:9    |                  |
-|        | DD    | 9:11   |                  |
-|        | J     | 11:12  | Julian/Gregorian |
-|        | C     | 12:13  | certainty        |
-| Part 2 | ===== | ====== | =======          |
-|        | +     | 13:14  | BC/AD -/+        |
-|        | YYY   | 14:18  |                  |
-|        | MM    | 18:20  |                  |
-|        | DD    | 20:22  |                  |
-|        | J     | 22:23  | Julian/Gregorian |
-|        | C     | 23:24  | certainty        |
+|        | char  | range  | meaning                         |
+| ------ | :---- | :----- | :------------------------------ |
+| Part 0 | ===== | ====== | =============================== |
+|        | T     | 0:1    | Type                            |
+|        | S     | 1:2    | Structure (see pos. 2 below)    |
+| Part 1 | ===== | ====== | =============================== |
+|        | +     | 2:3    | BC/AD -/+                       |
+|        | YYYY  | 3:7    |                                 |
+|        | MM    | 7:9    |                                 |
+|        | DD    | 9:11   |                                 |
+|        | J     | 11:12  | Julian/Gregorian                |
+|        | C     | 12:13  | certainty                       |
+| Part 2 | ===== | ====== | =============================== |
+|        | +     | 13:14  | BC/AD -/+                       |
+|        | YYY   | 14:18  |                                 |
+|        | MM    | 18:20  |                                 |
+|        | DD    | 20:22  |                                 |
+|        | J     | 22:23  | Julian/Gregorian                |
+|        | C     | 23:24  | certainty                       |
 
 from 
 <https://docs.google.com/spreadsheets/d/1yOb8klovt6UXStcD_S2g7wkkKh4S12AZJ9zSo1Dz_-g/edit#gid=2014317360>\
@@ -150,6 +174,9 @@ This section uses origin 1 indexing
 |            |               |
 
 D, Q, and R dates may be One Part or Two Part Dates.
+
+The second character indicates how the 2 parts of a date are interpreted.
+Each character specifies whether the second date is used or not (+00000000..)
 
 | Position 2 | meaning     | number of date parts |
 | :--------: | :---------- | :------------------: |
@@ -216,7 +243,6 @@ D, Q, and R dates may be One Part or Two Part Dates.
 | S           | Say       |
 | .           | otherwise |
 
-
 ### Part Two Date
 
 | Position 14 | meaning                   |
@@ -269,7 +295,6 @@ D, Q, and R dates may be One Part or Two Part Dates.
 |      L      | Calc      |
 |      S      | Say       |
 |      .      | otherwise |
-
 
 ### starting attempt at Bachus-Naur form Date spec (not even close yet)
 
