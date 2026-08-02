@@ -1,10 +1,18 @@
 
-To generate this data-
+Unlike schema DDL which has been changed only with
+major releases of the software, the data content is sometimes
+updated in minor releases. Most notably, additions are often
+made to the PlaceTable.
+
+
+
+To generate the data dump file-
 An empty database is created by RootsMagic using default options.
 These data were generated on Windows, using the x64 edition of RM.
-(Ideally, should use the 11.0.0 release etc)
+(Ideally, should use the N.0.0 release)
 
 Create the database dump
+Use the sqlite3.exe command line utility with the .dump command.
 
 
 
