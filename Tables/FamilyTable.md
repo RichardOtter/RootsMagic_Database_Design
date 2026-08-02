@@ -78,6 +78,20 @@ Proof is in regards to them being a couple. (?)  Is
 Note is displayed in Person edit window when either spouse or parent family selected.
 Proof and Edit are describing the FamilyTable record.
 
+Lookup tables
+TODO
+SpouseLabel
+
+
+FatherLabel
+
+
+
+MotherLabel
+
+
+
+
 ## Open Questions
 
 

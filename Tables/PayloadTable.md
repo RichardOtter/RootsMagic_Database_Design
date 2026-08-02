@@ -30,16 +30,16 @@ CREATE INDEX idxPayloadType ON PayloadTable (RecType);
 | --- | ---------- | -------- |
 | 1   | RecID      | _PK      |
 | 2   | RecType    | _LOOKUP  |
-| 3   | OwnerType  | _PFK-TYP |
-| 4   | OwnerID    | _PFK     |
+| 3   | OwnerType  | _STD |
+| 4   | OwnerID    | _STD     |
 | 5   | Title      |          |
 | 6   | DataRec    | XML      |
 | 7   | UTCModDate | _STD     |
 
-
 PayloadTable
 
-In RM GUI, 
+In RM GUI,
+
 * Saved Search Criteria
 Advanced search, list show by clicking button "Saved searches".\
 OwnerType =8 OwnerID=0  _SPECIAL-CASE
@@ -167,4 +167,3 @@ OwnerID ==> TagTable.TagValue, GroupTable.GroupID
 | 2       | saved group criteria  |
 
 ## Open Questions
-

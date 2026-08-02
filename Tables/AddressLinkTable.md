@@ -27,11 +27,11 @@ CREATE TABLE AddressLinkTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, Ad
 | #   | Name       | Note                           |
 | --- | ---------- | ------------------------------ |
 | 1   | LinkID     | _PK                            |
-| 2   | OwnerType  | _PFK-TYPE                      |
+| 2   | OwnerType  | _STD                      |
 | 3   | AddressID  | _FK ==> AddressTable.AddressID |
-| 4   | OwnerID    | _PFK                           |
-| 5   | AddressNum |                                |
-| 6   | Details    | _NOT-IMPL                       |
+| 4   | OwnerID    | _STD                           |
+| 5   | AddressNum | _TEXT-SL                       |
+| 6   | Details    | _NOT-IMPL                      |
 | 7   | UTCModDate | _STD                           |
 
 OwnerType is either 0, 1,3 or 6

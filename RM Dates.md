@@ -2,101 +2,19 @@
 
 ## Date information goes though several stages
 
-* A text date is entered by the user into the GUI in a Date field.\
- As the user types, the text is validated. The field is highlighted with an error color as the user types until the text can be interpreted as a valid RM date. Input date format is specified in the RM Preferences.\
-* The data that is stored in the database in a RM date field. (Database TEXT field) and a Sort date is created and stored in a RM SortDate field (database INTEGER (BIGINT) field)\
-* When the date is displayed by the GUI, the text is generated from the database date. The output is in the canonical date format as specified by in the preferences.\
-(the last is also displayed immediately after leaving the entry field before database update.)\
+A text date is entered by the user into the GUI in a Date field. As the user types, the text is validated. The field is highlighted with an error color as the user types until the text can be interpreted as a valid RM date. Input date format is specified in the RM Preferences.
 
-If we call the database data the "stored date"-\
+The data that is stored in the database in a RM date field. (Database TEXT field) and a Sort date is created and stored in a RM SortDate field (database INTEGER BIGINT field).
+
+When the date is displayed by the GUI, the text is generated from the database date. The output is in the canonical date format as specified by in the preferences. (the last is also displayed immediately after leaving the entry field before database update.)
+
+If we call the database data the "stored date"
 There may be more than one set of characters that can be entered into the RM GUI that generate the same stored date. That text in the GUI is converted to the canonical form.\
-There are several ways to display the saved date depending on the format selected in preferences.\
-
-
-## Double Date has two meanings
-
-Most commonly a date is a single date, Jan 1 1970, herein called a "One Part Date".
-A date can also indicate a range or interval, e.g.
-
-``` text
-From Jan 1 1970 to Feb 4 1975
-or
-Between 8 May 1973 and 8 Jun 1975 
-```
-
-herein named a "Two Part Date" since the RM Date has to encode both the start and end dates.\
-A second use of the term Double Dates regards the formatting of a date that occurred in the
-transition between Julian and Gregorian calendars in the West. This doc calls them "Double JG Dates", they are also called "slash dates".. 
-
-Double JG Dates usually look like this 04 Feb 1740/1 or 14 February 1699/1700  The year is Julian/Gregorian and enough digits are used for the Gregorian portion to make it unambiguous. Dates may only to be written as double if they occur between 1 January and 25 March in the years from 1582 until the year of full conversion. (1753 in the old British Empire). RM allows modern dates to be in double JG date format\
-
-Double Date  Julian Gregorian  Old Style - New Style
-
-<https://www.familysearch.org/en/wiki/Julian_and_Gregorian_Calendars>
-
-<https://news.legacyfamilytree.com/legacy_news/2020/01/tuesdays-tip-double-dating-intermediate.html>
-
-<http://www.searchforancestors.com/utility/gregorian.html>
-
-<https://stevemorse.org/jcal/julian.html>
-
-An example transition (two consecutive days)-
-
-| Country                     | Last Julian Date | First Gregorian Date |
-| :-------------------------- | :--------------- | :------------------- |
-| Germany, Catholic (Bavaria) | Oct 5, 1583      | Oct 16, 1583         |
-
-In historical sources created when dates were in transition, Julian data was sometimes/often  followed with O.S. and Gregorian dates followed by N.S.( old and new style)
-
-``` text
-                                 GREGORIAN
-  2   2   2   2   2   2   2   2   2   2   2   2   3   3   3   3   3   3   3   3   3   3   3   3
-  1   2   3   4   5   6   7   8   9  10  11  12   1   2   3   4   5   6   7   8   9  10  11  12 
-Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
- 11  12   1   2   3   4   5   6   7   8   9  10  11  12   1   2   3   4   5   6   7   8   9  10   
-  1   1   2   2   2   2   2   2   2   2   2   2   2   2   3   3   3   3   3   3   3   3   3   3
-                                  JULIIAN
-  X   X                                           X   X  
-```
-
-## Quarter dates
-
-enter- Q1 2014\
-displays- March Quarter 2014   (long format, what about other formats?)\
-sort      January 2014\
-      Q1 - 2014,  Q2 - June, Q3 - September, Q4 - December \
-
-March Quarter 2014   long format\
-Mar Q 2014           short format
-
-sort date is as if it was standard \
-Q1 2014 => sort date Jan 2014 same sort date as entering Jan 2014 in date
-
-## Quaker dates
-
-questions
-Do quaker dates just have a different canonical input/output but stored date is simple Gregorian?
-
-## Date validation
-
-General
-must be a valid Gregorian date (# days in month, leap year rules etc?) (do double dates have to be valid Julian dates (leap years were different)\
-Ambiguous date parts are interpreted by the sequence as specified in preferences.\
-For a Two-Part Date, the first date must be earlier than second.\
-
-Double JG Dates
-Month-day must be between Jan 1 and Mar 24 inclusive. 
-Year must be 1583 or greater
-
-Canonical date format
-Double JG Dates- the Gregorian date after the slash may only contain a year.
-And only the minimum number of digits required is included that show the main year +1.
-so: 1 Feb 1755/6     1 Feb 1759/60     1 Feb 1798/9    1 Feb 1799/1800
-There is no accounting for the 10 days "eliminated"
+There are several ways to display the saved date depending on the format selected in preferences.
 
 ## Database RM Date format
 
-Most RM database format dates are 24 bytes long, except '.' type dates which are one character and 'T' dates which can be any length >=1.
+Most RM database format dates are 24 bytes long, except '.' type dates which are one character and 'T' dates which can be length >=1.
 
 ``` text
 schematic of an RM Date
@@ -160,9 +78,9 @@ and investigations by RJ Otter
 ### Full date type
 The position 1 character describes the entire date.
 other modifiers affect ony the first or second date.
-Even JG double date flag (positions 12 & 23) affects its own part of the date
+Even JG double date flag (positions 12 & 23) affects only its own part of the date
 
-This section uses origin 1 indexing
+This section uses origin 1 indexing (as in SQLite substr function)
 
 | Position 1 | function      |
 | :--------: | ------------- |
@@ -180,11 +98,11 @@ Each character specifies whether the second date is used or not (+00000000..)
 
 | Position 2 | meaning     | number of date parts |
 | :--------: | :---------- | :------------------: |
+|     .      | On          |        1 part        |
 |     B      | Bef         |        1 part        |
 |     Y      | By          |        1 part        |
 |     T      | To          |        1 part        |
 |     U      | Until       |        1 part        |
-|     .      | On          |        1 part        |
 |     R      | Bet/And     |        2 part        |
 |     S      | From/To     |        2 part        |
 |     -      | – (em dash) |        2 part        |
@@ -296,7 +214,90 @@ Each character specifies whether the second date is used or not (+00000000..)
 |      S      | Say       |
 |      .      | otherwise |
 
-### starting attempt at Bachus-Naur form Date spec (not even close yet)
+
+## Double Date has two meanings
+
+Most commonly a date is a single date, Jan 1 1970, herein called a "One Part Date".
+A date can also indicate a range or interval, e.g.
+
+``` text
+From Jan 1 1970 to Feb 4 1975
+or
+Between 8 May 1973 and 8 Jun 1975 
+```
+
+herein named a "Two Part Date" since the RM Date has to encode both the start and end dates.\
+A second use of the term Double Dates regards the formatting of a date that occurred in the
+transition between Julian and Gregorian calendars in the West. This doc calls them "Double JG Dates", they are also called "slash dates".. 
+
+Double JG Dates usually look like this 04 Feb 1740/1 or 14 February 1699/1700  The year is Julian/Gregorian and enough digits are used for the Gregorian portion to make it unambiguous. Dates may only to be written as double if they occur between 1 January and 25 March in the years from 1582 until the year of full conversion. (1753 in the old British Empire). RM allows modern dates to be in double JG date format\
+
+Double Date  Julian Gregorian  Old Style - New Style
+
+<https://www.familysearch.org/en/wiki/Julian_and_Gregorian_Calendars>
+
+<https://news.legacyfamilytree.com/legacy_news/2020/01/tuesdays-tip-double-dating-intermediate.html>
+
+<http://www.searchforancestors.com/utility/gregorian.html>
+
+<https://stevemorse.org/jcal/julian.html>
+
+An example transition (two consecutive days)-
+
+| Country                     | Last Julian Date | First Gregorian Date |
+| :-------------------------- | :--------------- | :------------------- |
+| Germany, Catholic (Bavaria) | Oct 5, 1583      | Oct 16, 1583         |
+
+In historical sources created when dates were in transition, Julian data was sometimes/often  followed with O.S. and Gregorian dates followed by N.S.( old and new style)
+
+``` text
+                                 GREGORIAN
+  2   2   2   2   2   2   2   2   2   2   2   2   3   3   3   3   3   3   3   3   3   3   3   3
+  1   2   3   4   5   6   7   8   9  10  11  12   1   2   3   4   5   6   7   8   9  10  11  12 
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+ 11  12   1   2   3   4   5   6   7   8   9  10  11  12   1   2   3   4   5   6   7   8   9  10   
+  1   1   2   2   2   2   2   2   2   2   2   2   2   2   3   3   3   3   3   3   3   3   3   3
+                                  JULIIAN
+  X   X                                           X   X  
+```
+
+## Quarter dates
+
+enter- Q1 2014\
+displays- March Quarter 2014   (long format, what about other formats?)\
+sort      January 2014\
+      Q1 - 2014,  Q2 - June, Q3 - September, Q4 - December \
+
+March Quarter 2014   long format\
+Mar Q 2014           short format
+
+sort date is as if it was standard \
+Q1 2014 => sort date Jan 2014 same sort date as entering Jan 2014 in date
+
+## Quaker dates
+
+questions
+Do quaker dates just have a different canonical input/output but stored date is simple Gregorian?
+
+## Date validation
+
+General
+must be a valid Gregorian date (# days in month, leap year rules etc?) (do double dates have to be valid Julian dates (leap year rules were different)\
+Ambiguous date parts are interpreted by the sequence as specified in preferences.\
+For a Two-Part Date, the first date must be "earlier" than second.\
+
+Double JG Dates
+Month-day must be between Jan 1 and Mar 24 inclusive.
+Year must be 1583 or greater
+
+Canonical date format
+Double JG Dates- the Gregorian date after the slash may only contain a year.
+And only the minimum number of digits required is included that show the main year +1.
+so: 1 Feb 1755/6     1 Feb 1759/60     1 Feb 1798/9    1 Feb 1799/1800
+There is no accounting for the 10 days "eliminated"
+
+
+### Starting attempt at Bachus-Naur form Date spec (not even close yet)
 
 https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
 
@@ -338,3 +339,86 @@ with a sort date of-
 
 the Julian calendar date is stored in the DB !!!
 
+
+Copilot, with lots of prodding and correcting, gave this
+
+<rm-date> ::= <type>
+              <structure>
+              <era-1>
+              <year-1>
+              <month-1>
+              <day-1>
+              <julian-1>
+              <certainty-1>
+              <era-2>
+              <year-2>
+              <month-2>
+              <day-2>
+              <julian-2>
+              <certainty-2>
+
+(* -------------------------------------------------- *)
+(* Part 0 — Positions 0–2                             *)
+(* -------------------------------------------------- *)
+
+(* Position 0: Type *)
+<type> ::= "." | "D" | "Q" | "R" | "T"
+
+(* Position 1: Structure (Qualifier) *)
+<structure> ::= "." | "B" | "Y" | "T" | "U" | "F" | "I" | "A"
+               | "R" | "S" | "-" | "O"
+
+(* -------------------------------------------------- *)
+(* Part 1 — Positions 2–13                            *)
+(* -------------------------------------------------- *)
+
+(* Position 2: Era for first date part *)
+<era-1> ::= "+" | "-"
+
+(* Positions 3–6: Year (4 digits) *)
+<year-1> ::= <digit><digit><digit><digit>
+
+(* Positions 7–8: Month (2 digits) *)
+<month-1> ::= <digit><digit>
+
+(* Positions 9–10: Day (2 digits) *)
+<day-1> ::= <digit><digit>
+
+(* Position 11: Julian/Gregorian flag *)
+<julian-1> ::= "/" | "."
+
+(* Position 12: Certainty code *)
+<certainty-1> ::= "?" | "1" | "2" | "3" | "4" | "5" | "6"
+                | "A" | "C" | "E" | "L" | "S"
+                | "."
+
+(* -------------------------------------------------- *)
+(* Part 2 — Positions 13–24                           *)
+(* -------------------------------------------------- *)
+
+(* Position 13: Era for second date part *)
+<era-2> ::= "+" | "-"
+
+(* Positions 14–17: Year (4 digits) *)
+<year-2> ::= <digit><digit><digit><digit>
+
+(* Positions 18–19: Month (2 digits) *)
+<month-2> ::= <digit><digit>
+
+(* Positions 20–21: Day (2 digits) *)
+<day-2> ::= <digit><digit>
+
+(* Position 22: Julian/Gregorian flag *)
+<julian-2> ::= "/" | "."
+
+(* Position 23: Certainty code *)
+<certainty-2> ::= "?" | "1" | "2" | "3" | "4" | "5" | "6"
+                | "A" | "C" | "E" | "L" | "S"
+                | "."
+
+(* -------------------------------------------------- *)
+(* Lexical Elements                                   *)
+(* -------------------------------------------------- *)
+
+<digit> ::= "0" | "1" | "2" | "3" | "4"
+          | "5" | "6" | "7" | "8" | "9"

@@ -28,14 +28,13 @@ CREATE TABLE URLTable (LinkID INTEGER PRIMARY KEY, OwnerType INTEGER, OwnerID IN
 | #   | Name       | Note                |
 | --- | ---------- | ------------------- |
 | 1   | LinkID     | _PK                 |
-| 2   | OwnerType  | _PFK-TYPE           |
-| 3   | OwnerID    | _PFK                |
+| 2   | OwnerType  | _STD          |
+| 3   | OwnerID    | _STD                |
 | 4   | LinkType   | _NOT-IMP  (all 0) ? |
 | 5   | Name       | _TEXT-SL            |
 | 6   | URL        | _TEXT-SL            |
 | 7   | Note       | _STD                |
 | 8   | UTCModDate | _STD                |
- 
 
 Possible OwnerType
 3 = SourceTable.SourceID
@@ -44,6 +43,4 @@ Possible OwnerType
 6 = Tasktable.TaskID
 14 = PlaceTable.PlaceID     (either Place or Place Detail)
 
-
 ## Open Questions
-

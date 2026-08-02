@@ -36,15 +36,14 @@ CREATE INDEX idxOwnerDate ON EventTable (OwnerID,SortDate);
 | 16  | Note       | TEXT    |
 | 17  | UTCModDate | FLOAT   |
 
-
 ## Notes
 
 | #   | Name       | Note                             |
 | --- | ---------- | -------------------------------- |
 | 1   | EventID    | _PK                              |
 | 2   | EventType  | _FK ==> FactTypeTable.FactTypeID |
-| 3   | OwnerType  | _PFK-TYPE                        |
-| 4   | OwnerID    | _PFK                             |
+| 3   | OwnerType  | _STD                       |
+| 4   | OwnerID    | _STD                             |
 | 5   | FamilyID   | _NOT-IMP (all 0)                 |
 | 6   | PlaceID    | _FK ==> PlaceTable.PlaceID       |
 | 7   | SiteID     | _FK ==> PlaceTable.PlaceID       |
@@ -72,7 +71,6 @@ OwnerEventType  This is redundant with the EventType which also says what kind o
 
 Sentence    if not null, use this custom template for fact
 
-
 ## Lookup Tables
 
 | OwnerEventType | type         |
@@ -80,8 +78,6 @@ Sentence    if not null, use this custom template for fact
 | 0              | person event |
 | 1              | family event |
 
-
 ## Open Questions
 
 is FamilyID really not used ?  TODO
-

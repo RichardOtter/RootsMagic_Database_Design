@@ -1,0 +1,63 @@
+List of the ways a person may be linked to other data
+
+
+
+AddressTable
+    OwnerID     with OwnerType=0
+
+AncestryTable
+    rmID
+
+ChildTable
+    ChildID
+
+CitationLinkTable
+    OwnerID     with OwnerType=0
+
+DNATable
+    ID1
+    ID2
+    CommonAnc
+
+EventTable
+    OwnerID     with OwnerType=0
+
+ExclusionTable
+    ID1
+    ID2
+
+FamilySearchTable
+    rmID
+
+FamilyTable
+    FatherID
+    MotherID
+    ChildID
+
+FANTable
+    ID1
+    ID2
+  
+GroupTable
+    StartID
+    EndID
+
+HealthTable
+    OwnerID     (always PersonID)
+
+MediaLinkTable
+    OwnerID     with OwnerType=0
+
+NameTable
+    OwnerID     (always PersonID)
+  
+TaskLinkTable
+    OwnerID     with OwnerType=0
+
+URLTable
+    OwnerID     with OwnerType=0
+
+WitnessTable
+    PersonID
+
+

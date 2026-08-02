@@ -18,14 +18,13 @@ see:
 <https://answers.microsoft.com/en-us/msoffice/forum/all/julian-date/7d23f252-272a-4e52-802e-ec3f3e616845>
 
 
-Microsoft uses days since Dec20 1899.
 
-Julian date is from 
+Julian date zero times: 
 
 offset      start point                name
 0           noon January 1, 4713 BC   Original Julian Date. No controversy.
 2400000.5   midnight Nov. 17 1858     more standard Modified JD offset
-2415018.5   midnight Dec. 30, 1899    Microsoft MJD offset  
+2415018.5   midnight Dec. 30, 1899    Microsoft MJD offset  2_415_018.5
 2430000.0   midnight Jan. 5, 1941     some astrophysicists use this
 
 

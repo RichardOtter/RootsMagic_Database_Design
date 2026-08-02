@@ -116,16 +116,22 @@ RecType
 
 RecType=1    Title= [blank]
 
+sample data from v11
+
 data=
 
-    <Root>
-    <Version>9000</Version>
+
+<Root>
+    <Version>11000</Version>
     <STVersion>700</STVersion>
     <UniqueID>E8841905B21D49D79D2E878E0AC690B87147</UniqueID>
     <RootPerson>1</RootPerson>
-    <LastPerson>18013</LastPerson>
-    <LastView>1</LastView>
+    <LastPerson>1</LastPerson>
+    <LastView>3</LastView>
     <LastSideView>0</LastSideView>
+    <LastSearchView>1</LastSearchView>
+    <LastMediaView>0</LastMediaView>
+    <LastMediaAdd>1</LastMediaAdd>
     <StartPerson>1</StartPerson>
     <StartView>1</StartView>
     <StartSideView>0</StartSideView>
@@ -136,15 +142,16 @@ data=
     <PreparerName>Richard J Otter</PreparerName>
     <PreparerAddr1>4232 Wilshire Blvd.</PreparerAddr1>
     <PreparerAddr2>Oakland, California 94602 USA</PreparerAddr2>
-    <PreparerAddr3/>
-    <PreparerPhone/>
+    <PreparerAddr3></PreparerAddr3>
+    <PreparerPhone></PreparerPhone>
     <PreparerCellPhone>+1 510-604-1498</PreparerCellPhone>
-    <PreparerEmail>Richard.J.Otter@gmail.com</PreparerEmail>
-    <PreparerFax/>
-    <PreparerWeb/>
+    <PreparerEmail>RichardJOtter@gmail.com</PreparerEmail>
+    <PreparerFax></PreparerFax>
+    <PreparerWeb>https://RichardOtter.github.io</PreparerWeb>
     <LiveProblems>true</LiveProblems>
+    <DefLang>en</DefLang>
     <WebHintStatus>1</WebHintStatus>
-    <WebHints>false</WebHints>
+    <WebHints>true</WebHints>
     <MHHints>true</MHHints>
     <FSHints>true</FSHints>
     <FMPHints>false</FMPHints>
@@ -156,7 +163,7 @@ data=
     <MHRecordMatches>false</MHRecordMatches>
     <MHSmartMatches>true</MHSmartMatches>
     <MHConfidence>10</MHConfidence>
-    <MHUserEmail>rjo7@columbia.edu</MHUserEmail>
+    <MHUserEmail>RichardJOtter@gmail.com</MHUserEmail>
     <FilterAncestryList>1</FilterAncestryList>
     <FSConfidence>50</FSConfidence>
     <FSFixes>0</FSFixes>
@@ -164,27 +171,27 @@ data=
     <APFT2>2</APFT2>
     <APFT3>4</APFT3>
     <APFT4>1065</APFT4>
-    <APFT5>30</APFT5>
-    <RECST0>10037</RECST0>
-    <RECST1>10057</RECST1>
-    <RECST2>10057</RECST2>
-    <RECST3>10057</RECST3>
-    <RECST4>10038</RECST4>
-    <RECST5>10038</RECST5>
-    <RECST6>10038</RECST6>
-    <RECST7>10038</RECST7>
-    <RECST8>10038</RECST8>
-    <RECST9>10038</RECST9>
-    <RECST10>10038</RECST10>
-    <RECST11>10038</RECST11>
-    <RECST12>10037</RECST12>
-    <RECST13>10037</RECST13>
-    <RECST14>10038</RECST14>
-    <RECST15>10038</RECST15>
-    <RECST16>10038</RECST16>
-    <RECST17>10037</RECST17>
-    <RECST18>10037</RECST18>
-    <RECST19>10038</RECST19>
+    <APFT5>1062</APFT5>
+    <RECST0>10005</RECST0>
+    <RECST1>10068</RECST1>
+    <RECST2>10071</RECST2>
+    <RECST3>10023</RECST3>
+    <RECST4>10023</RECST4>
+    <RECST5>10051</RECST5>
+    <RECST6>10023</RECST6>
+    <RECST7>10023</RECST7>
+    <RECST8>10023</RECST8>
+    <RECST9>10023</RECST9>
+    <RECST10>10023</RECST10>
+    <RECST11>10023</RECST11>
+    <RECST12>10023</RECST12>
+    <RECST13>128</RECST13>
+    <RECST14>10030</RECST14>
+    <RECST15>10030</RECST15>
+    <RECST16>10074</RECST16>
+    <RECST17>10074</RECST17>
+    <RECST18>10071</RECST18>
+    <RECST19>10071</RECST19>
     <RECST20>10037</RECST20>
     <RECST21>10033</RECST21>
     <RECST22>10026</RECST22>
@@ -215,75 +222,98 @@ data=
     <RECST47>229</RECST47>
     <RECST48>10008</RECST48>
     <RECST49>10008</RECST49>
-    <RECRPT0>chartAncestor</RECRPT0>
-    <RECRPT1>rptPedigreeChart</RECRPT1>
-    <RECRPT2>rptFGS</RECRPT2>
-    <RECRPT3>rptNarrativeReport</RECRPT3>
-    <MemCitID>117450</MemCitID>
-    <NicknameDelim>0</NicknameDelim>
-    <IGIUserName/>
-    <IGIPassword/>
+    <RECRPT0>rptRelationshipChart</RECRPT0>
+    <RECRPT1>rptKinshipList</RECRPT1>
+    <RECRPT2>rptPedigreeChart</RECRPT2>
+    <RECRPT3>rptFGS</RECRPT3>
+    <MemCitID>121185</MemCitID>
+    <NicknameDelim>1</NicknameDelim>
+    <IGIUserName></IGIUserName>
+    <IGIPassword></IGIPassword>
     <PedGens>5</PedGens>
-    <DescGens>7</DescGens>
+    <DescGens>5</DescGens>
     <DescBEPS>false</DescBEPS>
     <AltNamesInSideList>true</AltNamesInSideList>
-    <AltNamesInExplorer>true</AltNamesInExplorer>
+    <AltNamesInExplorer>false</AltNamesInExplorer>
     <AltNamesInPersonView>false</AltNamesInPersonView>
+    <AltNamesInSearchView>true</AltNamesInSearchView>
     <ShowPictures>true</ShowPictures>
     <ShowAvatars>true</ShowAvatars>
-    <DBColor>0</DBColor>
+    <DBColor>1</DBColor>
     <BirthInSideList>true</BirthInSideList>
     <RecNoInSideList>true</RecNoInSideList>
     <PersViewSortCol>4</PersViewSortCol>
+    <PersViewSortAsc>false</PersViewSortAsc>
     <PersViewCol0>
-        <FieldType>2</FieldType>
-        <EventType>0</EventType>
-        <DataType>0</DataType>
-        <ColWidth>40</ColWidth>
-    </PersViewCol0>
-    <PersViewCol1>
-        <FieldType>10000</FieldType>
-        <EventType>4</EventType>
-        <DataType>1</DataType>
-        <ColWidth>132</ColWidth>
-    </PersViewCol1>
-    <PersViewCol2>
         <FieldType>10000</FieldType>
         <EventType>1065</EventType>
         <DataType>3</DataType>
         <ColWidth>100</ColWidth>
-    </PersViewCol2>
-    <PersViewCol3>
-        <FieldType>10000</FieldType>
-        <EventType>18</EventType>
-        <DataType>3</DataType>
-        <ColWidth>100</ColWidth>
-    </PersViewCol3>
-    <PersViewCol4>
-        <FieldType>10000</FieldType>
-        <EventType>1</EventType>
-        <DataType>2</DataType>
-        <ColWidth>200</ColWidth>
-    </PersViewCol4>
-    <PersViewCol5>
-        <FieldType>10000</FieldType>
-        <EventType>1</EventType>
-        <DataType>1</DataType>
-        <ColWidth>80</ColWidth>
-    </PersViewCol5>
-    <PersViewCol6>
-        <FieldType>10000</FieldType>
-        <EventType>2</EventType>
-        <DataType>2</DataType>
-        <ColWidth>200</ColWidth>
-    </PersViewCol6>
-    <PersViewCol7>
+    </PersViewCol0>
+    <PersViewCol1>
         <FieldType>3</FieldType>
         <EventType>0</EventType>
         <DataType>0</DataType>
         <ColWidth>80</ColWidth>
-    </PersViewCol7>
-    <PersViewNameColWidth>205</PersViewNameColWidth>
+    </PersViewCol1>
+    <PersViewCol2>
+        <FieldType>2</FieldType>
+        <EventType>0</EventType>
+        <DataType>0</DataType>
+        <ColWidth>40</ColWidth>
+    </PersViewCol2>
+    <PersViewNameColWidth>254</PersViewNameColWidth>
+    <SearchViewSortCol>4</SearchViewSortCol>
+    <SearchViewSortAsc>true</SearchViewSortAsc>
+    <SearchViewCol0>
+        <FieldType>10000</FieldType>
+        <EventType>1065</EventType>
+        <DataType>3</DataType>
+        <ColWidth>100</ColWidth>
+    </SearchViewCol0>
+    <SearchViewCol1>
+        <FieldType>10000</FieldType>
+        <EventType>17</EventType>
+        <DataType>3</DataType>
+        <ColWidth>100</ColWidth>
+    </SearchViewCol1>
+    <SearchViewCol2>
+        <FieldType>10000</FieldType>
+        <EventType>17</EventType>
+        <DataType>2</DataType>
+        <ColWidth>200</ColWidth>
+    </SearchViewCol2>
+    <SearchViewCol3>
+        <FieldType>2</FieldType>
+        <EventType>0</EventType>
+        <DataType>0</DataType>
+        <ColWidth>40</ColWidth>
+    </SearchViewCol3>
+    <SearchViewCol4>
+        <FieldType>10000</FieldType>
+        <EventType>1</EventType>
+        <DataType>1</DataType>
+        <ColWidth>80</ColWidth>
+    </SearchViewCol4>
+    <SearchViewCol5>
+        <FieldType>10000</FieldType>
+        <EventType>1</EventType>
+        <DataType>2</DataType>
+        <ColWidth>200</ColWidth>
+    </SearchViewCol5>
+    <SearchViewCol6>
+        <FieldType>10000</FieldType>
+        <EventType>2</EventType>
+        <DataType>1</DataType>
+        <ColWidth>80</ColWidth>
+    </SearchViewCol6>
+    <SearchViewCol7>
+        <FieldType>10000</FieldType>
+        <EventType>2</EventType>
+        <DataType>2</DataType>
+        <ColWidth>200</ColWidth>
+    </SearchViewCol7>
+    <SearchViewNameColWidth>197</SearchViewNameColWidth>
     <CplViewFathWidth>187</CplViewFathWidth>
     <CplViewMothWidth>150</CplViewMothWidth>
     <CplViewDateWidth>80</CplViewDateWidth>
@@ -299,8 +329,8 @@ data=
     <TreeShareFactType2Width>80</TreeShareFactType2Width>
     <TreeShareDate1Width>80</TreeShareDate1Width>
     <TreeShareDate2Width>80</TreeShareDate2Width>
-    <EditPersEventWidth>119</EditPersEventWidth>
-    <EditPersonDateWidth>105</EditPersonDateWidth>
+    <EditPersEventWidth>131</EditPersEventWidth>
+    <EditPersonDateWidth>124.333343505859</EditPersonDateWidth>
     <SideListBirthWidth>40</SideListBirthWidth>
     <SideListDeathWidth>40</SideListDeathWidth>
     <DescViewNameWidth>300</DescViewNameWidth>
@@ -312,7 +342,7 @@ data=
     <DescViewDPlaceWidth>300</DescViewDPlaceWidth>
     <EditPersonSourceWidth>250</EditPersonSourceWidth>
     <FSMatchPersonWidth>150</FSMatchPersonWidth>
-    <FSMatchBDWidth>119</FSMatchBDWidth>
+    <FSMatchBDWidth>197</FSMatchBDWidth>
     <FSMatchBPWidth>150</FSMatchBPWidth>
     <FSMatchDDWidth>139</FSMatchDDWidth>
     <FSMatchDPWidth>150</FSMatchDPWidth>
@@ -320,12 +350,25 @@ data=
     <FSMatchMotherWidth>150</FSMatchMotherWidth>
     <FSMatchSpouseWidth>150</FSMatchSpouseWidth>
     <FSMatchFSIDWidth>80</FSMatchFSIDWidth>
+    <DnaProviderWidth>64</DnaProviderWidth>
+    <DnaPerson1Width>390.333343505859</DnaPerson1Width>
+    <DnaPerson2Width>200</DnaPerson2Width>
+    <DnaSharedCMWidth>120</DnaSharedCMWidth>
+    <DnaSharedPercentWidth>85</DnaSharedPercentWidth>
+    <DnaLargeSegWidth>76</DnaLargeSegWidth>
+    <DnaSharedSegWidth>79</DnaSharedSegWidth>
+    <DnaDateWidth>126</DnaDateWidth>
+    <DnaRelWidth>200</DnaRelWidth>
+    <DnaDnaRelWidth>200</DnaDnaRelWidth>
+    <HealthConditionWidth>200</HealthConditionWidth>
+    <HealthDetailsWidth>200</HealthDetailsWidth>
+    <HealthDateWidth>100</HealthDateWidth>
     <CitationsCollapsed>false</CitationsCollapsed>
     <CitationsCollapsed_Tasks>false</CitationsCollapsed_Tasks>
     <WitnessesCollapsed>false</WitnessesCollapsed>
     <MediaCollapsed>false</MediaCollapsed>
     <MediaCollapsed_Places>false</MediaCollapsed_Places>
-    <MediaCollapsed_Citations>false</MediaCollapsed_Citations>
+    <MediaCollapsed_Citations>true</MediaCollapsed_Citations>
     <MediaCollapsed_Sources>false</MediaCollapsed_Sources>
     <MediaCollapsed_Tasks>false</MediaCollapsed_Tasks>
     <TasksCollapsed>false</TasksCollapsed>
@@ -342,7 +385,7 @@ data=
     <FSFilterGenerations>11</FSFilterGenerations>
     <FSFilterStartPerson>2361</FSFilterStartPerson>
     <TimelineReversePlaceNames>false</TimelineReversePlaceNames>
-    <TimelinePlaceDetails>true</TimelinePlaceDetails>
+    <TimelinePlaceDetails>false</TimelinePlaceDetails>
     <TimelineSharedEvents>true</TimelineSharedEvents>
     <TimelineAssociations>true</TimelineAssociations>
     <TimelineRelatives>false</TimelineRelatives>
@@ -351,7 +394,7 @@ data=
     <TimelineChildren>true</TimelineChildren>
     <TimelineSpouses>true</TimelineSpouses>
     <TimelineDblRows>true</TimelineDblRows>
-    <TimelineSortBy>0</TimelineSortBy>
+    <TimelineSortBy>2</TimelineSortBy>
     <NameSpacing>false</NameSpacing>
     <NameInvalidCharacters>false</NameInvalidCharacters>
     <NamePunctuation>false</NamePunctuation>
@@ -375,868 +418,320 @@ data=
     <PlaceAddCountry>false</PlaceAddCountry>
     <PlaceRemoveCountry>false</PlaceRemoveCountry>
     <PlaceReplaceBrackets>false</PlaceReplaceBrackets>
+    <LastDNAProvider>2</LastDNAProvider>
+    <RelateCalcID2>1530</RelateCalcID2>
     <ColorCodeSet>1</ColorCodeSet>
     <ColorCode0>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10>Couseins of CAO</FieldName10>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name>Ancestors </Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10></FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14>Ancestos and spouses</FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17></FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27></FieldName27>
     </ColorCode0>
     <ColorCode1>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name>Research goals</Name>
+        <FieldName0></FieldName0>
+        <FieldName1>Died before 16</FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4>not related</FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7>FACT-DNA: exists</FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10>CAO Ancestors</FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12>CP=STOP</FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14>Cousins_CAO_ext</FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16>Not Connected to RJO</FieldName16>
+        <FieldName17>CP=Start of line.</FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20>CP=TODO</FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27>CP=TODO Start of line.</FieldName27>
     </ColorCode1>
     <ColorCode2>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name></Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10></FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14></FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17></FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27></FieldName27>
     </ColorCode2>
     <ColorCode3>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name>Cousins- RJO, GCS, KEF</Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10></FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14></FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17></FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27></FieldName27>
     </ColorCode3>
     <ColorCode4>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name></Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10></FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14></FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17></FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27></FieldName27>
     </ColorCode4>
     <ColorCode5>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name></Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10></FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14></FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17></FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27></FieldName27>
     </ColorCode5>
     <ColorCode6>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name>Test</Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10>Not in RJO tree</FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14></FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17></FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27></FieldName27>
     </ColorCode6>
     <ColorCode7>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name>DNA matches &amp; intermediates</Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10></FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14></FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17>DNA Match &amp; intermediates</FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27></FieldName27>
     </ColorCode7>
     <ColorCode8>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name></Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10></FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14></FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17></FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27></FieldName27>
     </ColorCode8>
     <ColorCode9>
-        <Name/>
-        <FieldName0/>
-        <FieldName1/>
-        <FieldName2/>
-        <FieldName3/>
-        <FieldName4/>
-        <FieldName5/>
-        <FieldName6/>
-        <FieldName7/>
-        <FieldName8/>
-        <FieldName9/>
-        <FieldName10/>
-        <FieldName11/>
-        <FieldName12/>
-        <FieldName13/>
-        <FieldName14/>
-        <FieldName15/>
-        <FieldName16/>
-        <FieldName17/>
-        <FieldName18/>
-        <FieldName19/>
-        <FieldName20/>
-        <FieldName21/>
-        <FieldName22/>
-        <FieldName23/>
-        <FieldName24/>
-        <FieldName25/>
-        <FieldName26/>
-        <FieldName27/>
+        <Name></Name>
+        <FieldName0></FieldName0>
+        <FieldName1></FieldName1>
+        <FieldName2></FieldName2>
+        <FieldName3></FieldName3>
+        <FieldName4></FieldName4>
+        <FieldName5></FieldName5>
+        <FieldName6></FieldName6>
+        <FieldName7></FieldName7>
+        <FieldName8></FieldName8>
+        <FieldName9></FieldName9>
+        <FieldName10></FieldName10>
+        <FieldName11></FieldName11>
+        <FieldName12></FieldName12>
+        <FieldName13></FieldName13>
+        <FieldName14></FieldName14>
+        <FieldName15></FieldName15>
+        <FieldName16></FieldName16>
+        <FieldName17></FieldName17>
+        <FieldName18></FieldName18>
+        <FieldName19></FieldName19>
+        <FieldName20></FieldName20>
+        <FieldName21></FieldName21>
+        <FieldName22></FieldName22>
+        <FieldName23></FieldName23>
+        <FieldName24></FieldName24>
+        <FieldName25></FieldName25>
+        <FieldName26></FieldName26>
+        <FieldName27>no in rjo main tree</FieldName27>
     </ColorCode9>
 </Root>
-
-
-RecType=4    Title=MAIN
-data=
-
-...<?xml version="1.0" encoding="UTF-8"?>.<styles>
-    <style>
-        <code>AhnHead</code>
-        <font>
-            <name>Arial</name>
-            <size>14</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>AhnText</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>BoxChartText</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>CalendarDate</code>
-        <font>
-            <name>Arial</name>
-            <size>12</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>CalendarMonth</code>
-        <font>
-            <name>Arial</name>
-            <size>18</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>CalendarSubtitle</code>
-        <font>
-            <name>Arial</name>
-            <size>14</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>CalendarText</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>Dummy</code>
-        <font>
-            <name>Verdana</name>
-            <size>24</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>FamGroupEvents</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>9</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>FamGroupLabels</code>
-        <font>
-            <name>Arial</name>
-            <size>7</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>FamGroupNames</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>Footnote</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>8</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>LabelText</code>
-        <font>
-            <name>Arial</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>ListHeader</code>
-        <font>
-            <name>Arial</name>
-            <size>10</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>ListText</code>
-        <font>
-            <name>Courier New</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>NarrHead</code>
-        <font>
-            <name>Arial</name>
-            <size>14</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>NarrText</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>OTDHeaders</code>
-        <font>
-            <name>Arial</name>
-            <size>12</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>OTDText</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>OTDTitle</code>
-        <font>
-            <name>Arial</name>
-            <size>14</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>PedChartEvents</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>8</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>PedChartLabels</code>
-        <font>
-            <name>Arial</name>
-            <size>7</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>PedChartNames</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>9</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>PhotoTreeName</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>PublisherSubtitle</code>
-        <font>
-            <name>Arial</name>
-            <size>14</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>PublisherText</code>
-        <font>
-            <name>Arial</name>
-            <size>12</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>PublisherTitle</code>
-        <font>
-            <name>Arial</name>
-            <size>16</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>RelateChartNames</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>RelateChartText</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>ResearchComments</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>11</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>ResearchDatePlace</code>
-        <font>
-            <name>Arial</name>
-            <size>10</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>ResearchText</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>11</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>ScrapbookCaption</code>
-        <font>
-            <name>Arial</name>
-            <size>10</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>ScrapbookDescription</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>SummaryText</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>WallchartData</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>False</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>WallchartName</code>
-        <font>
-            <name>Times New Roman</name>
-            <size>10</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-    <style>
-        <code>WallchartTitle</code>
-        <font>
-            <name>Arial</name>
-            <size>18</size>
-            <bold>True</bold>
-            <underline>False</underline>
-            <italic>False</italic>
-            <strikeout>False</strikeout>
-        </font>
-    </style>
-</styles>.
-
-
-
-RecType=6    Title=WEB1
-data=
-
-<Root>
-    <Extension>0</Extension>
-    <Generations>2</Generations>
-    <WebsiteType>0</WebsiteType>
-    <HomePage>index</HomePage>
-    <Project>Otter-saito</Project>
-    <DateFormat>0</DateFormat>
-    <Title>Otter-Saito Family Tree</Title>
-    <Introduction/>
-    <PhotoFile/>
-    <Name/>
-    <Street/>
-    <CityStateZip/>
-    <Country/>
-    <Email/>
-    <HomePagePhoto>0</HomePagePhoto>
-    <NavBarPosition>0</NavBarPosition>
-    <Header/>
-    <Footer/>
-    <SideBkColor>$FF008080</SideBkColor>
-    <SideTextColor>$FFFFFFFF</SideTextColor>
-    <MainBkColor>$FFFFFFFF</MainBkColor>
-    <MainTextColor>$FF000000</MainTextColor>
-    <LinkColor>$FF0000FF</LinkColor>
-    <HoverColor>$FFFF0000</HoverColor>
-    <IncGedcom>false</IncGedcom>
-    <IncNotes>true</IncNotes>
-    <IncPhotos>true</IncPhotos>
-    <PrivacyNames>1</PrivacyNames>
-    <PrivacyFacts>0</PrivacyFacts>
-    <Privatize>true</Privatize>
-    <IncPrivateFacts>false</IncPrivateFacts>
-    <IncPrivateNotes>false</IncPrivateNotes>
-    <StripBrackets>true</StripBrackets>
-    <Link0/>
-    <LinkText0/>
-    <Link1/>
-    <LinkText1/>
-    <Link2/>
-    <LinkText2/>
-    <Link3/>
-    <LinkText3/>
-    <Link4/>
-    <LinkText4/>
-    <Link5/>
-    <LinkText5/>
-    <Link6/>
-    <LinkText6/>
-    <Link7/>
-    <LinkText7/>
-    <Link8/>
-    <LinkText8/>
-    <Link9/>
-    <LinkText9/>
-    <PrintSourceType>1</PrintSourceType>
-    <IncCitationText>true</IncCitationText>
-    <IncCitationComments>true</IncCitationComments>
-    <ReuseDups>true</ReuseDups>
-    <ProjectPath>C:\Users\rotter\Documents\Genealogy\GeneDB\HTML</ProjectPath>
-</Root>
-
-
-RecType=7    Title=PROB1
-data=
-
-<Root>
-    <NoSex>true</NoSex>
-    <EventOrder>true</EventOrder>
-    <ParentsMarriage>true</ParentsMarriage>
-    <AgeAtDeath>true</AgeAtDeath>
-    <AgeAtMarriage>true</AgeAtMarriage>
-    <BornBeforeParents>true</BornBeforeParents>
-    <FathersDeath>true</FathersDeath>
-    <MothersDeath>true</MothersDeath>
-    <FathersAge>true</FathersAge>
-    <MothersAge>true</MothersAge>
-    <MaxAgeAtDeath>100</MaxAgeAtDeath>
-    <MinAgeAtMarriage>14</MinAgeAtMarriage>
-    <MaxAgeAtMarriage>70</MaxAgeAtMarriage>
-    <MinFathersAge>14</MinFathersAge>
-    <MaxFathersAge>70</MaxFathersAge>
-    <MinMothersAge>14</MinMothersAge>
-    <MaxMothersAge>50</MaxMothersAge>
-    <DeathBurial>true</DeathBurial>
-    <MaxDeathBurial>30</MaxDeathBurial>
-    <MissingGiven>true</MissingGiven>
-    <MissingSurname>true</MissingSurname>
-</Root>
-
-
-RecType=7    Title=PROB2
-
-<Root>
-    <NoSex>true</NoSex>
-    <EventOrder>true</EventOrder>
-    <ParentsMarriage>true</ParentsMarriage>
-    <AgeAtDeath>true</AgeAtDeath>
-    <AgeAtMarriage>true</AgeAtMarriage>
-    <BornBeforeParents>true</BornBeforeParents>
-    <FathersDeath>true</FathersDeath>
-    <MothersDeath>true</MothersDeath>
-    <FathersAge>true</FathersAge>
-    <MothersAge>true</MothersAge>
-    <MaxAgeAtDeath>104</MaxAgeAtDeath>
-    <MinAgeAtMarriage>14</MinAgeAtMarriage>
-    <MaxAgeAtMarriage>75</MaxAgeAtMarriage>
-    <MinFathersAge>14</MinFathersAge>
-    <MaxFathersAge>70</MaxFathersAge>
-    <MinMothersAge>14</MinMothersAge>
-    <MaxMothersAge>50</MaxMothersAge>
-    <DeathBurial>true</DeathBurial>
-    <MaxDeathBurial>652</MaxDeathBurial>
-    <MissingGiven>true</MissingGiven>
-    <MissingSurname>true</MissingSurname>
-    <MissingGivenAlt>false</MissingGivenAlt>
-    <MissingSurnameAlt>false</MissingSurnameAlt>
-    </Root>
-
-```
 
 ## Open Questions
 

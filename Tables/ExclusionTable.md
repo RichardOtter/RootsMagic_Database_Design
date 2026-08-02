@@ -24,13 +24,13 @@ CREATE UNIQUE INDEX idxExclusionIndex ON ExclusionTable (ExclusionType, ID1, ID2
 
 ## Notes
 
-| #   | Name          | Note |
-| --- | ------------- | ---- |
-| 1   | RecID         | _PK  |
-| 2   | ExclusionType |      |
-| 3   | ID1           |      |
-| 4   | ID2           |      |
-| 5   | UTCModDate    | _STD |
+| #   | Name          | Note                         |
+| --- | ------------- | ---------------------------- |
+| 1   | RecID         | _PK                          |
+| 2   | ExclusionType |                              |
+| 3   | ID1           | _FK ==> PersonTable.PersonID |
+| 4   | ID2           | _FK ==> PersonTable.PersonID |
+| 5   | UTCModDate    | _STD                         |
 
 
 ```

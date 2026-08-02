@@ -121,12 +121,29 @@ were created using the default binary collation.
 De-normalized Birth and death dates should go in the PersonTable?
 A person can have multiple names, can each name have a dif B & D date in the index?
 
-It should depend on where the denormalized dates are used. If they are only shown i the name 
-index, then every idex entry has a name and a pair of dates. They go together. It also
-means that if the NameTable b+d date data gets out of sync, then every name of the same 
+It should depend on where the denormalized dates are used. If they are only shown in the name
+index, then every index entry has a name and a pair of dates. They go together. It also
+means that if the NameTable b+d date data gets out of sync, then every name of the same
 person may have different dates.
 
+## Add to Database
 
+```
+CREATE TABLE LU_NameType (
+    NameTypeID INTEGER PRIMARY KEY,
+    NameType TEXT NOT NULL
+);
+
+INSERT INTO LU_NameType (NameTypeID, NameType) VALUES
+    (0, '►unspecified◄'),
+    (1, 'AKA'),
+    (2, 'Birth'),
+    (3, 'Immigrant'),
+    (4, 'Maiden'),
+    (5, 'Married'),
+    (6, 'Nickname'),
+    (7, 'Other Spelling');
+```
 
 ### DONE 1
 

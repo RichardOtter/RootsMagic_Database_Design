@@ -32,15 +32,15 @@ CREATE INDEX idxCitationLinkOwnerID ON CitationLinkTable (OwnerID);
 | --- | ---------- | -------------------------------------------------------- |
 | 1   | LinkID     | _PK                                                      |
 | 2   | CitationID | _FK ==> CitationTable.CitationID                         |
-| 3   | OwnerType  | _PFK-TYPE                                                |
-| 4   | OwnerID    | _PFK                                                     |
+| 3   | OwnerType  | _STD                                               |
+| 4   | OwnerID    | _STD                                                     |
 | 5   | SortOrder  | _NOT-IMP (all null)                                      |
-| 6   | Quality    | _LOOKUP _GUI-LAB="Source", "Information", "Evidence"     |
-| 7   | IsPrivate  | _STD _NOT-IMP (all 0)                                    |
+| 6   | Quality    | _LOOKUP_GUI-LAB="Source", "Information", "Evidence"     |
+| 7   | IsPrivate  | _STD_NOT-IMP (all 0)                                    |
 | 8   | Flags      | _NOT-IMP (all 0)                                         |
 | 9   | UTCModDate | _STD                                                     |
 
-OwnerType values seen in DB: 
+OwnerType values seen in DB:
 
 | OwnerType | Links to       |
 | --------- | -------------- |
@@ -55,7 +55,6 @@ A citation must have only Source, but via the CitationLinkTable, may be pointed 
 
 Link to association is new and different. It gives evidence for a relationship.
 
-
 SortOrder does not appear in the RM GUI, but the column values is indeed used in v9.1.3 for sorting citations in lists,
 but not in reports when the citation is converted to a footnote, and not in the "slide-in workflow" citation listing.
 Utility app and SQL statement exist to exploit this field even in v9.1.3.
@@ -64,10 +63,9 @@ In RM GUI
 Quality is shown in three separate fields in the Citation display:
 Source, Information, and Evidence. See below for values.
 
-
 ## Lookup Tables
 
-Quality has three positions 
+Quality has three positions
 
 | Char # | GUI field   | Possible values |
 | ------ | ----------- | --------------- |
@@ -93,7 +91,6 @@ Quality has three positions
 | I        | Indirect   |
 | N        | Negative   |
 | ~        | Don't know |
-
 
 ## Open Questions
 

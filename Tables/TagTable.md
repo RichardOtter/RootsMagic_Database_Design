@@ -29,7 +29,7 @@ CREATE INDEX idxTagType ON TagTable (TagType);
 | --- | ----------- | --------------- |
 | 1   | TagID       | _PK             |
 | 2   | TagType     | _LOOKUP         |
-| 3   | TagValue    |                 |
+| 3   | TagValue    | GroupID with WagType=0         |
 | 4   | TagName     | _TEXT-SL  _RMNC |
 | 5   | Description | _TEXT-SL        |
 | 6   | UTCModDate  | _STD            |

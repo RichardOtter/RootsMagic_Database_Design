@@ -39,10 +39,10 @@ CREATE INDEX idxMediaOwnerID ON MediaLinkTable (OwnerID);
 | --- | ---------- | ---------------------------------------- |
 | 1   | LinkID     | _PK                                      |
 | 2   | MediaID    | _FK ==> MultimediaTable.MediaID          |
-| 3   | OwnerType  | _PFK-TYPE                                |
-| 4   | OwnerID    | _PFK                                     |
+| 3   | OwnerType  | _STD                               |
+| 4   | OwnerID    | _STD                                     |
 | 5   | IsPrimary  | _STD                                     |
-| 6   | Include1   | _LOOKUP _GUI-LAB="Include in scrapbook"  |
+| 6   | Include1   | _LOOKUP_GUI-LAB="Include in scrapbook"  |
 | 7   | Include2   | _NOT-IMP  (all 0)                        |
 | 8   | Include3   | _NOT-IMP  (all 0)                        |
 | 9   | Include4   | _NOT-IMP  (all 0)                        |
@@ -56,19 +56,18 @@ CREATE INDEX idxMediaOwnerID ON MediaLinkTable (OwnerID);
 
 OwnerType's seen in database
 
-
-| OwnerType | Can be any of-  | 
+| OwnerType | Can be any of-  |
 | :-------- | :-----------    |
-| 0         | person          | 
-| 1         | family/couple   | 
-| 2         | fact/event      | 
-| 3         | source          | 
-| 4         | citation        | 
-| 5         | place           | 
-| 6         | task            | 
-| 7         | name            | 
-| 14        | place detail    | 
-| 19        | association     | 
+| 0         | person          |
+| 1         | family/couple   |
+| 2         | fact/event      |
+| 3         | source          |
+| 4         | citation        |
+| 5         | place           |
+| 6         | task            |
+| 7         | name            |
+| 14        | place detail    |
+| 19        | association     |
 
 OTHERS ?
 

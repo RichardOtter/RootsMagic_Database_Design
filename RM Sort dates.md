@@ -86,19 +86,20 @@ The flag fields tell what kind of modifiers the date has.
 Certainty modifiers are not included in SortDates since they don’t affect the sort order.
 Here are the possible flag values:
 
-flag value	meaning
-0	before
-3	by
-6	to
-9	until
-12	normal date (no modifier)
-15	between/and
-18	from/to
-21	dash (25 Oct 2011-28 Oct 2011)
-24	or
-27	from
-30	since
-31	after
+flag value meaning
+0   before
+3   by
+6   to
+9   until
+12   normal date (no modifier)
+15   between/and
+18   from/to
+21   dash (25 Oct 2011-28 Oct 2011) (10 Oct 2022 -2)
+24   or
+27   from
+30   since
+31   after
+
 Note that the value of these flags determines the sort order for dates as listed above.
 Since dates that don’t have ranges store their year as 0x3fff, they will always come after dates with ranges that have a year less than this.
 

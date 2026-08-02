@@ -18,7 +18,6 @@ CREATE INDEX idxDnaId2 ON DNATable (ID2);
 
 | #   | Name          | Type    |
 | --- | ------------- | ------- |
-| 1   | CitationID    | INTEGER |
 | 1   | RecID         | INTEGER |
 | 2   | ID1           | INTEGER |
 | 3   | ID2           | INTEGER |
@@ -41,33 +40,33 @@ CREATE INDEX idxDnaId2 ON DNATable (ID2);
 
 ## Notes
 
-| #   | Name          | Note |
-| --- | ------------- | ---- |
-| 1   | CitationID    |      |
-| 1   | RecID         |      |
-| 2   | ID1           |      |
-| 3   | ID2           |      |
-| 4   | Label1        |      |
-| 5   | Label2        |      |
-| 6   | DNAProvider   |      |
-| 7   | SharedCM      |      |
-| 8   | SharedPercent |      |
-| 9   | LargeSeg      |      |
-| 10  | SharedSegs    |      |
-| 11  | Date          |      |
-| 12  | Relate1       |      |
-| 13  | Relate2       |      |
-| 14  | CommonAnc     |      |
-| 15  | CommonAncType |      |
-| 16  | Verified      |      |
-| 17  | Note          |      |
-| 18  | UTCModDate    |      |
+| #   | Name          | Note                         |
+| --- | ------------- | ---------------------------- |
+| 1   | RecID         | _PK                          |
+| 2   | ID1           | _FK ==> PersonTable.PersonID |
+| 3   | ID2           | _FK ==> PersonTable.PersonID |
+| 4   | Label1        | _TEXT-SL                     |
+| 5   | Label2        | _TEXT-SL                     |
+| 6   | DNAProvider   | _LOOKUP                      |
+| 7   | SharedCM      |                              |
+| 8   | SharedPercent |                              |
+| 9   | LargeSeg      |                              |
+| 10  | SharedSegs    |                              |
+| 11  | Date          | _STD                         |
+| 12  | Relate1       |                              |
+| 13  | Relate2       |                              |
+| 14  | CommonAnc     | _FK ==> PersonTable.PersonID |
+| 15  | CommonAncType | _LOOKUP                      |
+| 16  | Verified      | _LOOKUP                      |
+| 17  | Note          | _STD                         |
+| 18  | UTCModDate    | _STD                         |
 
 
-The missing Lookup Table
+Lookup Tables
 
 | DNAProvider    |     |
 | -------------- | --- |
+| not specified  | 0   |
 | 23andme        | 1   |
 | Ancestry       | 2   |
 | FamilyTree DNA | 3   |
@@ -77,3 +76,7 @@ The missing Lookup Table
 | Unknown        | 998 |
 | Other          | 999 |
 
+
+| Verified       |     |
+| -------------- | --- |
+|  TODO              | 0   |
