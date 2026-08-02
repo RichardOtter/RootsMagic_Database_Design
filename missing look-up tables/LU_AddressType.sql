@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS LU_AddressType (
     AddressType TEXT NOT NULL
 );
 
-INSERT OR IGNORE INTO LU_SexType (SexID, SexType) VALUES
+INSERT OR IGNORE INTO LU_AddressType (AddressID, AddressType) VALUES
   (0, "Person"),
   (1, "Repository");
 
