@@ -5,29 +5,26 @@ See other branches for other schema versions.
 ## Overview
 
 RootsMagic software, published by RootsMagic Inc. <https://RootsMagic.com>
-is a genealogy research project organizational tool
-used by amateur and professional genealogists and ordinary hobbyists who want to
-build their family tree.
-
-This dataset was created by the community of RootsMagic users.
+is a genealogy research project management tool
+used by amateur and professional genealogists to build family trees.
 
 RootsMagic is distinguished by its use of an unencrypted SQLite database as its
 storage file format. That makes the user's data available to third party tools
-and applications. One won't have to worry about one's data being locked up in 
+and applications. One won't have to worry about one's data being locked up in
 a proprietary storage format.
 
-If you are interested in SQL access to the RootsMagic database, you must become
+The information in this repository was created by the community of RootsMagic users.
+
+If you are interested in SQL access to the RootsMagic database, you should become
 familiar with the web site <https://SQLiteToolsForRootsMagic.com>
 
-There is a user forum where interesting questions are posed and answered.
+Besides interesting blog posts, there is a user forum for discussion and Q & A.
 
 The forum format allows a easy exchange of ideas and posting of SQL statements,
-but it does not lend itself towards creating documentation and keeping it current
-and fixing errors. That's why I am starting this project where anyone can
+but it does not lend itself towards creating documentation and keeping it current. That's why I am starting this project where anyone can
 contribute, fix errors, and fill in the gaps. Everything is under version
 control, so we can keep current docs for all future RM releases in separate
-branches or perhaps create point-in-time "releases" that may be more easily
-accessed.
+branches.
 
 ## Content
 
@@ -36,6 +33,8 @@ accessed.
 contains information used by the files in the Tables folder.
 
 ### Table files
+
+One file per schema table.
 
 * Table name at the top.
 * Purpose section. A one liner giving summary of what this table does.
@@ -46,14 +45,13 @@ contains information used by the files in the Tables folder.
 * An Open Questions section which makes uncertainty more obvious.
 * A DONE marker with a level number. starting at 1 and increasing, here to help order what needs to be fixed next.
 
-Some more general topics are discussed in files included in this root folder,
-alongside this ReadMe file.
+### Dates folder
 
-### RM Date, Sort Date and UTCModDate files
+RM Date, Sort Date and UTCModDate files include format and code.
 
 Very useful info on how to interpret and manipulate date data in RM.
 
-### Initial Data
+### Initial Data folder
 
 Shows data initially created by RootsMagic when it generates an empty database.
 
