@@ -1,3 +1,15 @@
+
+To generate this data-
+An empty database is created by RootsMagic using default options.
+These data were generated on Windows, using the x64 edition of RM.
+(Ideally, should use the 11.0.0 release etc)
+
+Create the database dump
+
+
+
+Open questions
+
 When a user creates a new database/file in RootsMagic,
 is the file created from SQL, or is a pre-created file duplicated and save?
 
