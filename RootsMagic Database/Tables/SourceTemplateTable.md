@@ -7,7 +7,8 @@ Stores the templates on which sources are constructed.
 ## Table DDL
 
 ``` SQL
-CREATE TABLE SourceTemplateTable (TemplateID INTEGER PRIMARY KEY, Name TEXT COLLATE RMNOCASE, Description TEXT, Favorite INTEGER, Category TEXT, Footnote TEXT, ShortFootnote TEXT, Bibliography TEXT, FieldDefs BLOB, UTCModDate FLOAT );
+CREATE TABLE SourceTemplateTable (TemplateID INTEGER PRIMARY KEY, Name TEXT COLLATE RMNOCASE, Description TEXT, Favorite INTEGER, Category TEXT, Footnote TEXT, ShortFootnote TEXT, Bibliography TEXT, FieldDefs BLOB, UTCModDate FLOAT, SourceName TEXT, CitationName TEXT, Keywords TEXT)
+
 
 CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 ```
@@ -26,6 +27,9 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 | 8   | Bibliography  | TEXT    |
 | 9   | FieldDefs     | BLOB    |
 | 10  | UTCModDate    | FLOAT   |
+| 11  | SourceName    | TEXT    |
+| 12  | CitationName  | TEXT    |
+| 13  | Keywords      | TEXT    |
 
 ## Notes
 
@@ -41,6 +45,10 @@ CREATE INDEX idxSourceTemplateName ON SourceTemplateTable (Name);
 | 8   | Bibliography  | _TEXT-SL        |
 | 9   | FieldDefs     | _STD XML        |
 | 10  | UTCModDate    | _STD            |
+| 11  | SourceName    | _TEXT-SL        |
+| 12  | CitationName  | _TEXT-SL        |
+| 13  | Keywords      | _TEXT-SL        |
+
 
 No prohibition against duplicate Names.\
 Names may have leading, trailing, embedded spaces.
@@ -51,11 +59,17 @@ No info in documentation on how to use category field.
 It is in the RM GUI in SourceTemplate list window.
 All the builtin templates use the fields to cite Evidence Explained and other books.
 
+SourceName, CitationName, and Keywords fields are new in v12. The first 2 store
+template for newly created source and citation names. They can include literal
+text and filed names in square brackets.
+
+TODO Not yet clear how Keywords fields is used.
+
 Footnote, ShortFootnote, & Bibliography are the template to use for creation of the corresponding output using the values of the constituent fields from the source and citation records.
 
 FieldDefs is the XML that encodes all of the information editable in the RM SourceTemplates window.
 
-A sample of FieldDefs - only 1 source field nad only 1 citation field. Shown as XML pretty print format, the actual data is all one line. (not clear if long hint can have new lines.)
+A sample of FieldDefs - only 1 source field had only 1 citation field. Shown as XML pretty print format, the actual data is all one line. (not clear if long hint can have new lines.)
 
 ```
 <Root>
