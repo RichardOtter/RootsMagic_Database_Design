@@ -1,5 +1,5 @@
 # RootsMagic_Database_Design
-This branch of the repo describes the ver 11 database schema
+This branch of the repo describes the ver 12 database schema
 See other branches for other schema versions.
 
 ## Overview
